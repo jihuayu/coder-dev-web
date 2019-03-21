@@ -1,7 +1,7 @@
 <template>
 	<div class="content">
 		<div class="center">
-			<div class="label">趣考网络</div>
+			<div class="label1">趣考网络</div>
 			<div class="login-box">
 				<div class="login-box-top">
 					<div class="label-cn">程序猿养成系统</div>
@@ -19,15 +19,27 @@
 				</div>
 				<div class="login-box-bottom">
 					<div class="login-btn">登录</div>
-					<p>还没有账号？ <a href="register.html">立即注册</a></p>
+					<p>还没有账号？ <a href="register">立即注册</a></p>
 				</div>
 			</div>
 		</div>
 		<div class="copyright">CopyRight @ finalexam.cn 2019</div>
+		<span v-html="rem"></span>
 	</div>
+
 </template>
 
 <style>
+	html,
+	body {
+		font-family: 'SourceHanSansCN-Normal';
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		font-size: 100%;
+	}
+
 	.content {
 		background: #389AE3;
 		width: 100%;
@@ -46,7 +58,7 @@
 		height: 500px;
 	}
 
-	.label {
+	.label1 {
 		font-family: 'fzhanzhenguangbiaos-gbregular';
 		font-size: 7em;
 		padding: 0 30px;
@@ -161,6 +173,13 @@
 
 <script>
 	export default {
-		name: 'login'
+		name: 'login',
+		data: function() {
+			return {
+			
+			}
+		}
+
+
 	}
 </script>
